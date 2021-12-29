@@ -44,7 +44,7 @@ This app helps user to be able to log multiple exercises in a workout on a given
 
 
 ## Deployed application link
-Live Deployed Allication: [View Application](https://nameless-harbor-72570.herokuapp.com/)<br/>
+Live Deployed Allication: [View Application](https://linh-workout-tracker.herokuapp.com/)<br/>
 
 
 ## Languages

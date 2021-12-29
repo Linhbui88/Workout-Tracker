@@ -20,8 +20,8 @@ mongoose.connect(
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
-  }
-);
+  },
+).catch(error => console.log(error))
 
 
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
