@@ -12,7 +12,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-app.use(routes)
+app.use(routes);
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/workout_db',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
-mongoose.connect('mongodb://localhost:27017/workout_db');
+
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`))
